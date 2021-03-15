@@ -4,6 +4,10 @@
 SET FOREIGN_KEY_CHECKS=0;
 SET FOREIGN_KEY_CHECKS=1;
 ```
+
+=== Adding indexes on the existing giant table taking too long?
+- https://stackoverflow.com/questions/25191113/alter-table-query-taking-too-long-for-adding-constraint
+
 ```
  -- add primary key and auto increment
 ALTER TABLE test_table modify id bigint NOT NULL AUTO_INCREMENT;
