@@ -5,6 +5,8 @@ SET FOREIGN_KEY_CHECKS=0;
 SET FOREIGN_KEY_CHECKS=1;
 ```
 
+https://stackoverflow.com/questions/13148630/how-do-i-find-which-transaction-is-causing-a-waiting-for-table-metadata-lock-s
+
 === Adding indexes on the existing giant table taking too long?
 - https://stackoverflow.com/questions/25191113/alter-table-query-taking-too-long-for-adding-constraint
 - https://stackoverflow.com/questions/15501673/how-can-i-temporarily-disable-a-foreign-key-constraint-in-mysql
