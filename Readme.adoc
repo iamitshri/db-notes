@@ -1,5 +1,7 @@
 == Mysql Code snippets
 
+https://dba.stackexchange.com/questions/195018/mysql-safe-to-kill-transaction-that-is-stuck-in-waiting-for-table-metadata-loc
+https://stackoverflow.com/questions/13148630/how-do-i-find-which-transaction-is-causing-a-waiting-for-table-metadata-lock-s
 ```
 SET FOREIGN_KEY_CHECKS=0;
 SET FOREIGN_KEY_CHECKS=1;
