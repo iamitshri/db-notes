@@ -3,6 +3,7 @@
 ```
 SET FOREIGN_KEY_CHECKS=0;
 SET FOREIGN_KEY_CHECKS=1;
+select @@foreign_key_checks
 ```
 
 https://stackoverflow.com/questions/13148630/how-do-i-find-which-transaction-is-causing-a-waiting-for-table-metadata-lock-s
