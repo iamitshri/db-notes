@@ -1,3 +1,5 @@
+== Mysql Code snippets
+
 ```
 SET FOREIGN_KEY_CHECKS=0;
 SET FOREIGN_KEY_CHECKS=1;
@@ -6,12 +8,12 @@ SET FOREIGN_KEY_CHECKS=1;
  -- add primary key and auto increment
 ALTER TABLE test_table modify id bigint NOT NULL AUTO_INCREMENT;
 
--- add unique
+-- add unique constraint
 alter table assessment add UNIQUE `assessment_code` (`assessment_code`);
 ALTER TABLE mytbl ADD UNIQUE (columnName);
 ALTER IGNORE TABLE mytbl ADD UNIQUE (columnName);
 
--- add index
+-- add index constraint
 ALTER TABLE test_amit ADD INDEX (Email,Email2);
 ALTER TABLE testalter_tbl ADD INDEX (c);
 ALTER TABLE test_amit drop index name;
