@@ -9,23 +9,23 @@ SET FOREIGN_KEY_CHECKS=1;
 ALTER TABLE test_table modify id bigint NOT NULL AUTO_INCREMENT;
 
 -- add unique constraint
-alter table assessment add UNIQUE `assessment_code` (`assessment_code`);
-ALTER TABLE mytbl ADD UNIQUE (columnName);
-ALTER IGNORE TABLE mytbl ADD UNIQUE (columnName);
+alter table test_table add UNIQUE `assessment_code` (`assessment_code`);
+ALTER TABLE test_table ADD UNIQUE (columnName);
+ALTER IGNORE TABLE test_table ADD UNIQUE (columnName);
 
 -- add index constraint
-ALTER TABLE test_amit ADD INDEX (Email,Email2);
-ALTER TABLE testalter_tbl ADD INDEX (c);
-ALTER TABLE test_amit drop index name;
+ALTER TABLE test_table ADD INDEX (Email,Email2);
+ALTER TABLE test_table ADD INDEX (c);
+ALTER TABLE test_table drop index name;
 
 -- add foreign key
-ALTER TABLE referral ADD CONSTRAINT referral_ibfk_2 FOREIGN KEY (evaluation_id) REFERENCES `evaluation` (`evaluation_id`);
+ALTER TABLE test_table ADD CONSTRAINT referral_ibfk_2 FOREIGN KEY (evaluation_id) REFERENCES `evaluation` (`evaluation_id`);
 
 -- adding composite primary key
-ALTER TABLE provider ADD PRIMARY KEY(person,place,thing);
+ALTER TABLE test_table ADD PRIMARY KEY(person,place,thing);
 
--- show create table
--- SHOW CREATE TABLE assessment
+-- show  table definition
+SHOW CREATE TABLE test_table
 
 ```
 
