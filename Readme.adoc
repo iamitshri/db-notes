@@ -35,6 +35,17 @@ ALTER TABLE test_table ADD PRIMARY KEY(person,place,thing);
 SHOW CREATE TABLE test_table
 
 ```
+==== Find hanged queries
+```
+select * From information_schema.processlist;
+Select concat('KILL ',id,';') from information_schema.processlist where user='migration_user'; 
+show processlist;
+kill 1916;
+  
+ USE INFORMATION_SCHEMA;
+ SELECT * FROM information_schema.INNODB_LOCK_WAITS;
+Select concat('KILL ',id,';') from information_schema.processlist where user='migration_user'; 
+```
 
 
 == References 
