@@ -7,6 +7,7 @@ SET FOREIGN_KEY_CHECKS=1;
 
 === Adding indexes on the existing giant table taking too long?
 - https://stackoverflow.com/questions/25191113/alter-table-query-taking-too-long-for-adding-constraint
+- https://stackoverflow.com/questions/15501673/how-can-i-temporarily-disable-a-foreign-key-constraint-in-mysql
 
 ```
  -- add primary key and auto increment
