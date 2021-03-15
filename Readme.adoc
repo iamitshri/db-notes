@@ -1,0 +1,32 @@
+```
+SET FOREIGN_KEY_CHECKS=0;
+SET FOREIGN_KEY_CHECKS=1;
+```
+```
+ -- add primary key and auto increment
+ALTER TABLE test_table modify id bigint NOT NULL AUTO_INCREMENT;
+
+-- add unique
+alter table assessment add UNIQUE `assessment_code` (`assessment_code`);
+ALTER TABLE mytbl ADD UNIQUE (columnName);
+ALTER IGNORE TABLE mytbl ADD UNIQUE (columnName);
+
+-- add index
+ALTER TABLE test_amit ADD INDEX (Email,Email2);
+ALTER TABLE testalter_tbl ADD INDEX (c);
+ALTER TABLE test_amit drop index name;
+
+-- add foreign key
+ALTER TABLE referral ADD CONSTRAINT referral_ibfk_2 FOREIGN KEY (evaluation_id) REFERENCES `evaluation` (`evaluation_id`);
+
+-- adding composite primary key
+ALTER TABLE provider ADD PRIMARY KEY(person,place,thing);
+
+-- show create table
+-- SHOW CREATE TABLE assessment
+
+```
+
+
+== References 
+- https://tableplus.com/blog/2018/08/mysql-how-to-temporarily-disable-foreign-key-constraints.html
