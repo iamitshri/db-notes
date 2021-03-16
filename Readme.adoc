@@ -5,6 +5,9 @@ https://stackoverflow.com/questions/13148630/how-do-i-find-which-transaction-is-
 ```
 SET FOREIGN_KEY_CHECKS=0;
 SET FOREIGN_KEY_CHECKS=1;
+select @@foreign_key_checks;
+select @@global.foreign_key_checks;
+SET GLOBAL FOREIGN_KEY_CHECKS=0;
 select @@foreign_key_checks
 ```
 
@@ -48,6 +51,12 @@ kill 1916;
  USE INFORMATION_SCHEMA;
  SELECT * FROM information_schema.INNODB_LOCK_WAITS;
 Select concat('KILL ',id,';') from information_schema.processlist where user='migration_user'; 
+
+select * From information_schema.processlist;
+Select concat('KILL ',id,';') from information_schema.processlist where user='migration_user'; 
+  
+  SHOW VARIABLES LIKE 'max_heap_table_size'; -- 16777216
+  SHOW VARIABLES LIKE 'tmp_table_size';-- 16777216
 ```
 
 
